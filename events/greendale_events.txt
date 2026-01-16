@@ -1,0 +1,108 @@
+add_namespace = mod_event
+
+#chang siezes power
+country_event = {
+    id = mod_event.1
+    title = mod_event.1.t
+    desc = mod_event.1.d
+    picture = GFX_report_event_generic_read_write
+
+    trigger = {
+       tag = GRD
+       has_completed_focus = GRD_focus_security_force
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = mod_event.1.a
+        set_politics = {
+            ruling_party = fascism
+        }
+        add_popularity = {
+            ideology = fascism
+            popularity = .4
+        }
+        add_stability = -.20
+        add_manpower = 1
+    }
+}
+
+#intro scene - DOES NOT WORK
+country_event = {
+    id = mod_event.2
+    title = mod_event.2.t
+    desc = mod_event.2.d
+    picture = GFX_report_event_generic_read_write
+
+    trigger = {
+        tag = GRD
+    }
+    fire_only_once = yes
+
+    option = {
+        name = mod_event.2.a
+    }
+    
+    option = {
+        name = mod_event.2.b
+        country_event = {id = mod_event.3} 
+    }
+}
+
+#path guide
+country_event = {
+    id = mod_event.3
+    title = mod_event.3.t
+    desc = mod_event.3.d
+    fire_only_once = yes
+    trigger = {
+        tag = GRD
+    }
+    is_triggered_only = yes
+    option = {
+        name = mod_event.3.a
+    }
+}
+
+#chang ousted
+country_event = {
+    id = mod_event.4
+    title = mod_event.4.t
+    desc = mod_event.4.d
+
+    trigger = {
+        tag = grd
+    }
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = mod_event.4.a
+        set_politics = {
+            ruling_party = neutrality
+        }
+        add_popularity = {
+            ideology = neutrality
+            popularity = .3
+        }
+        add_stability = -.10
+        add_political_power = 20
+    }
+    
+    option = {
+        name = mod_event.4.b
+        set_politics = {
+            ruling_party = democratic
+        }
+        add_popularity = {
+            ideology = democratic
+            popularity = .3
+        }
+        add_stability = .1
+    }
+}

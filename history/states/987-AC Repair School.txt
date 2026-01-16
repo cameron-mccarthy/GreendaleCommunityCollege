@@ -1,0 +1,22 @@
+state={
+	id=1052
+	name="STATE_1052"
+	provinces={
+		7780 
+	}
+	manpower=150000
+	state_category = rural
+	history {
+				buildings = {
+					infrastructure = 2
+					arms_factory = 1
+				}
+				victory_points = {
+					7780 3
+				}
+				owner = GRD
+				add_core_of = GRD
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

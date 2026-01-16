@@ -1,0 +1,35 @@
+capital = 1048
+
+oob = "GRD_1936"
+
+set_convoys = 20
+set_research_slots = 3
+
+set_technology = {
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    basic_train = 1
+    gw_artillery = 1
+    tech_support = 1
+}
+
+recruit_character = GRD_dean_pelton
+recruit_character = GRD_britta_perry
+recruit_character = GRD_ben_chang
+
+add_ideas = grd_federal_reseach
+
+set_politics = {
+    ruling_party = democratic
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 90
+    fascism = 8
+    communism = 1
+    neutrality = 1
+}
+

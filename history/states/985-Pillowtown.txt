@@ -1,0 +1,24 @@
+state={
+	id=1050
+	name="STATE_1050"
+	provinces={
+		1658 
+	}
+	history {
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			1658 5
+		}
+		owner = PIL
+		add_core_of = PIL
+	}
+	manpower=300000
+	state_category = town
+
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

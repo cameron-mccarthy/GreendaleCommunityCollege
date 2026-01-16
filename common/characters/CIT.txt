@@ -1,0 +1,15 @@
+characters={
+    CIT_dean_spreck={
+        name=CIT_dean_spreck
+        portraits = {
+            civilian = {
+                large = GFX_portrait_spreck
+            }
+        }
+        country_leader={
+            ideology = despotism
+            expire="1965.1.1.1"
+            id = -1
+        }
+    }
+}

@@ -1,0 +1,22 @@
+state={
+	id=1047
+	name="STATE_1047"
+	provinces={
+		868 6887 7684 7999 9792 10535 
+	}
+	history {
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			868 3
+		}
+		owner = USA
+		add_core_of = USA
+	}
+	manpower=200000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

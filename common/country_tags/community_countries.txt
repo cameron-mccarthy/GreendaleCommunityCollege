@@ -1,0 +1,4 @@
+GRD = "countries/Greendale.txt"
+CIT = "countries/City.txt"
+PIL = "countries/Pillowtown.txt"
+BLA = "countries/Blanketsburg.txt"

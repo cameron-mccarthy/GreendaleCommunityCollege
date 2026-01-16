@@ -1,0 +1,12 @@
+ideas = {
+    country = {
+        grd_federal_reseach = {
+            picture = generic_pp_unity_bonus
+
+            modifier = {
+                political_power_gain = 0.3
+                research_speed_factor = 0.1
+            }
+        }
+    }
+}

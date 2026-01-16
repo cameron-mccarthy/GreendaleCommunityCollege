@@ -1,0 +1,383 @@
+focus_tree = {
+    id = GRD_focus_tree
+    country = {
+        base = 0
+        modifier = {
+            add = 10
+            tag = GRD
+        }
+    }
+
+    focus = {
+        id = GRD_focus_enrollment
+        icon = GFX_focus_generic_manpower
+        x = 10
+        y = 0
+        cost = 5
+        completion_reward = {
+            add_manpower = 100000
+            random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2   
+			}
+        }
+    }
+
+    focus = {
+        id = GRD_focus_higher_learning
+        icon = GFX_focus_research
+        relative_position_id = GRD_focus_enrollment
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_research_slot = 1
+        }
+        prerequisite = {
+            focus =  GRD_focus_enrollment
+        }
+    }
+
+    focus = {
+        id = GRD_focus_spanish
+        icon = GFX_focus_research
+        relative_position_id = GRD_focus_enrollment
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = {
+            reverse_add_opinion_modifier = {
+                target = MEX
+                modifier = spanish_envoy
+            }
+            reverse_add_opinion_modifier = {
+                target = CUB
+                modifier = spanish_envoy
+            }
+            reverse_add_opinion_modifier = {
+                target = NIC
+                modifier = spanish_envoy
+            }
+            reverse_add_opinion_modifier = {
+                target = ELS
+                modifier = spanish_envoy
+            }
+            reverse_add_opinion_modifier = {
+                target = DOM
+                modifier = spanish_envoy
+            }
+            reverse_add_opinion_modifier = {
+                target = HON
+                modifier = spanish_envoy
+            }
+            reverse_add_opinion_modifier = {
+                target = PAN
+                modifier = spanish_envoy
+            }
+            reverse_add_opinion_modifier = {
+                target = COS
+                modifier = spanish_envoy
+            }
+        }
+        prerequisite = {
+            focus =  GRD_focus_enrollment
+        }
+    }
+
+    focus = {
+        id = GRD_focus_fire_chang
+        icon = GFX_focus_research
+        relative_position_id = GRD_focus_higher_learning
+        x = -1
+        y = 1
+        cost = 1
+        completion_reward = {
+			add_manpower = -1
+		}
+        prerequisite = {
+            focus = GRD_focus_spanish
+        }
+        prerequisite = {
+            focus =  GRD_focus_higher_learning
+        }
+    }
+
+    focus = {
+        id = GRD_focus_security_force
+        icon = GFX_focus_research
+        relative_position_id = GRD_focus_fire_chang
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+        prerequisite = {
+            focus = GRD_focus_fire_chang
+        }
+    }
+
+
+    focus = {
+        id = GRD_focus_chang
+        icon = GFX_focus_research
+        relative_position_id = GRD_focus_security_force
+        x = 0
+        y = 1
+        cost = 5
+
+        available = {
+            has_government = fascism
+        }
+
+        completion_reward = {
+			add_political_power = 100
+            add_stability = -.2
+            add_war_support = .05
+		}
+        prerequisite = {
+            focus =  GRD_focus_security_force
+        }
+    }
+
+    focus = {
+        id = GRD_focus_curriculum_unavailable
+        icon = GFX_focus_research
+        relative_position_id = GRD_focus_chang
+        x = -2
+        y = 1
+        cost = 2
+
+        available = {
+            has_government = fascism
+        }
+
+        completion_reward = {
+			add_manpower = -7
+            add_stability = -0.1
+		}
+        prerequisite = {
+            focus =  GRD_focus_chang
+        }
+    }
+
+    focus = {
+        id = GRD_focus_school_board
+        icon = GFX_focus_research
+        relative_position_id = GRD_focus_curriculum_unavailable
+        x = 0
+        y = 1
+        cost = 5
+
+        available = {
+            has_government = fascism
+        }
+
+        completion_reward = {
+			add_political_power = 75
+            add_stability = 0.2
+		}
+        prerequisite = {
+            focus = GRD_focus_curriculum_unavailable
+        }
+    }
+
+    focus = {
+        id = GRD_focus_seize_colorado
+        icon = GFX_focus_research
+        relative_position_id = GRD_focus_chang
+        x = 0
+        y = 1
+        cost = 7
+
+        completion_reward = {
+			add_state_core = 382
+            transfer_state = 382
+            USA = {
+                remove_state_core = 382
+            } 
+		}
+        prerequisite = {
+            focus = GRD_focus_chang
+        }
+    }
+
+    focus = {
+        id = GRD_focus_buffs
+        icon = GFX_focus_research
+        relative_position_id = GRD_focus_seize_colorado
+        x = 0
+        y = 1
+        cost = 5
+
+        completion_reward = {
+			
+		}
+        prerequisite = {
+            focus = GRD_focus_seize_colorado
+        }
+    }
+
+    focus = {
+        id = GRD_focus_chang_military
+        icon = GFX_focus_research
+        relative_position_id = GRD_focus_chang
+        x = 2
+        y = 1
+        cost = 5
+
+        available = {
+            has_government = fascism
+        }
+
+        completion_reward = {
+			add_manpower = 10
+		}
+        prerequisite = {
+            focus =  GRD_focus_chang
+        }
+    }
+
+    focus = {
+        id = GRD_focus_chang_military_2
+        icon = GFX_focus_research
+        relative_position_id = GRD_focus_chang_military
+        x = 0
+        y = 1
+        cost = 5
+
+        available = {
+            has_government = fascism
+        }
+
+        completion_reward = {
+			add_manpower = 10
+		}
+        prerequisite = {
+            focus =  GRD_focus_chang_military
+        }
+    }
+
+    focus = {
+        id = GRD_focus_chang_dynasty
+        icon = GFX_focus_research
+        relative_position_id = GRD_focus_buffs
+        x = 0
+        y = 1
+        cost = 5
+
+        available = {
+            has_government = fascism
+        }
+
+        completion_reward = {
+			add_manpower = 10
+		}
+        prerequisite = {
+            focus =  GRD_focus_buffs
+        }
+        prerequisite = {
+            focus =  GRD_focus_chang_military_2
+        }
+        prerequisite = {
+            focus =  GRD_focus_school_board
+        }
+    }
+
+    focus = {
+        id = GRD_focus_industry
+        icon = GFX_goal_generic_construct_civ_factory
+        relative_position_id = GRD_focus_enrollment
+        x = 6
+        y = 0
+        cost = 5
+        completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+    }
+
+    focus = {
+        id = GRD_focus_industry2
+        icon = GFX_goal_generic_construct_civ_factory
+        relative_position_id = GRD_focus_industry
+        x = 0
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = industry
+            }
+
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+        prerequisite = {
+            focus = GRD_focus_industry
+        }
+    }
+}

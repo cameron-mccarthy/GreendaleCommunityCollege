@@ -1,0 +1,66 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_portrait_dean"
+        texturefile = "gfx/leaders/GRD/dean.tga"
+    }
+    spriteType = {
+        name = "GFX_portrait_spreck"
+        texturefile = "gfx/leaders/CIT/spreck.tga"
+    }
+    spriteType = {
+        name = "GFX_portrait_pillow_abed"
+        texturefile = "gfx/leaders/PIL/pillowabed.tga"
+    }
+    spriteType = {
+        name = "GFX_portrait_blanket_troy"
+        texturefile = "gfx/leaders/BLA/blankettroy.tga"
+    }
+    spriteType = {
+        name = "GFX_portrait_pillow_man"
+        texturefile = "gfx/leaders/PIL/pillowman.tga"
+    }
+    spriteType = {
+        name = "GFX_portrait_pillow_man_small"
+        texturefile = "gfx/leaders/PIL/pillowmansmall.tga"
+    }
+    spriteType = {
+        name = "GFX_portrait_pavel"
+        texturefile = "gfx/leaders/PIL/pavel.tga"
+    }
+    spriteType = {
+        name = "GFX_portrait_pavel_small"
+        texturefile = "gfx/leaders/PIL/pavelsmall.tga"
+    }
+    spriteType = {
+        name = "GFX_portrait_big_cheddar"
+        texturefile = "gfx/leaders/BLA/bigcheddar.tga"
+    }
+    spriteType = {
+        name = "GFX_portrait_big_cheddar_small"
+        texturefile = "gfx/leaders/BLA/bigcheddarsmall.tga"
+    }
+    spriteType = {
+        name = "GFX_portrait_blanket_garrett"
+        texturefile = "gfx/leaders/BLA/blanketgarrett.tga"
+    }
+    spriteType = {
+        name = "GFX_portrait_blanket_garrett_small"
+        texturefile = "gfx/leaders/BLA/blanketgarrettsmall.tga"
+    }
+    spriteType = {
+        name = "GFX_portrait_britta_perry"
+        texturefile = "gfx/leaders/GRD/brittaperry.tga"
+    }
+    spriteType = {
+        name = "GFX_portrait_britta_perry_small"
+        texturefile = "gfx/leaders/GRD/brittaperrysmall.tga"
+    }
+    spriteType = {
+        name = "GFX_portrait_ben_chang"
+        texturefile = "gfx/leaders/GRD/senorchang.tga"
+    }
+    spriteType = {
+        name = "GFX_portrait_ben_chang_small"
+        texturefile = "gfx/leaders/GRD/senorchangsmall.tga"
+    }
+}

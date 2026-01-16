@@ -1,0 +1,24 @@
+state={
+	id=1049
+	name="STATE_1049"
+	provinces={
+		1827 
+	}
+	history {
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 2
+		}
+		victory_points = {
+			1827 20
+		}
+		owner = CIT
+		add_core_of = CIT
+	}
+	manpower= 700000
+	state_category = city
+
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

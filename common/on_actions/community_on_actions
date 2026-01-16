@@ -1,0 +1,9 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            GRD = {
+                country_event = mod_event.2
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+characters={
+    GRD_dean_pelton={
+        name=GRD_dean_pelton
+        portraits = {
+            civilian = {
+                large = GFX_portrait_dean
+            }
+        }
+        country_leader={
+            ideology = liberalism
+            expire="1965.1.1.1"
+            traits = {
+                popular_figurehead
+            }
+            id = -1
+        }
+    }
+    GRD_britta_perry={
+        name = GRD_britta_perry
+        portraits = {
+            civilian = {
+                large = GFX_portrait_britta_perry
+            }
+            army = {
+                small = GFX_portrait_britta_perry_small
+            }
+        }
+        country_leader={
+            ideology = anarchist_communism
+            expire="1965.1.1.1"
+            traits = {
+                brittalian_anarchism
+            }
+            id = -1
+        }
+        advisor={
+            slot = political_advisor
+            idea_token = britta
+            traits = {communist_revolutionary}
+            ai_will_do = {
+                factor = 1.0
+            }
+            do_effect  = {
+				NOT  = {
+					has_government  = communism
+				}
+			}
+        }
+    }
+    GRD_ben_chang={
+        name = GRD_ben_chang
+        portraits = {
+            civilian = {
+                large = GFX_portrait_ben_chang
+            }
+            army = {
+                small = GFX_portrait_ben_chang_small
+            }
+        }
+        country_leader={
+            ideology = fascism_ideology
+            expire="1965.1.1.1"
+            traits = {
+                headstrong
+            }
+            id = -1
+        }
+        advisor={
+            slot = political_advisor
+            idea_token = chang
+            traits = {fascist_demagogue}
+            ai_will_do = {
+                factor = 1.0
+            }
+            do_effect  = {
+				NOT  = {
+					has_government  = fascism
+				}
+			}
+        }
+    }
+}

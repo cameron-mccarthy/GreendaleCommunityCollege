@@ -1,0 +1,76 @@
+characters={
+    BLA_troy_barnes={
+        name=BLA_troy_barnes
+        portraits = {
+            civilian = {
+                large = GFX_portrait_blanket_troy
+            }
+        }
+        country_leader={
+            ideology = despotism
+            expire="1965.1.1.1"
+            id = -1
+        }
+    }
+    
+    BLA_big_cheddar={
+        name = BLA_big_cheddar
+        portraits = {
+            army = {
+                large = GFX_portrait_big_cheddar
+            }
+            army = {
+                small = GFX_portrait_big_cheddar_small
+            }
+        }
+        advisor = {
+            slot = army_chief
+            traits = {
+                army_chief_offensive_2
+            }
+            cost = 100
+            ai_will_do = {
+                factor = 1.0
+            }
+        }
+        corps_commander={
+			traits={ infantry_officer commando }
+			skill=5
+			attack_skill=7
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=0
+		}
+    }
+    BLA_blanket_garrett = {
+        name = BLA_blanket_garrett
+        portraits = {
+            civilian = {
+                large = GFX_portrait_blanket_garrett
+            }
+            army = {
+                small = GFX_portrait_blanket_garrett_small
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = garrett
+            traits = {
+                prince_of_terror
+            }
+            ai_will_do = {
+                factor = 1.0
+            }
+        }
+        corps_commander={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+    }
+}
