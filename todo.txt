@@ -18,6 +18,7 @@ characters for generals/advisors:
     Magnitude
     Leonard
     rich
+    slater
 
 156 x 210
 

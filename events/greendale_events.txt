@@ -28,6 +28,8 @@ country_event = {
         }
         add_stability = -.20
         add_manpower = 1
+        add_ideas = grd_unpopular_rule
+        add_ideas = grd_changlourious_basterds
     }
 }
 
@@ -38,9 +40,6 @@ country_event = {
     desc = mod_event.2.d
     picture = GFX_report_event_generic_read_write
 
-    trigger = {
-        tag = GRD
-    }
     fire_only_once = yes
 
     option = {

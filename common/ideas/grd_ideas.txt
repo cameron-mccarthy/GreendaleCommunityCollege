@@ -8,5 +8,31 @@ ideas = {
                 research_speed_factor = 0.1
             }
         }
+        grd_unpopular_rule = {
+            picture = generic_pp_unity_bonus
+
+            modifier = {
+                consumer_goods_factor = 0.30
+                political_power_gain = -0.5
+                research_speed_factor = -0.3
+                political_advisor_cost_factor = 0.5
+                stability_factor = -0.4
+                war_support_factor = 0.2
+                weekly_manpower = -50
+            }
+        }
+        grd_changlourious_basterds = {
+            picture = generic_pp_unity_bonus
+
+            modifier = {
+                army_attack_factor = -0.5
+                army_defence_factor = -0.5
+                army_speed_factor = 0.2
+                army_org_factor = -0.25
+                army_morale_factor = -0.1
+                planning_speed = 0.15
+                experience_gain_army_factor = -0.10
+            }
+        }
     }
 }
