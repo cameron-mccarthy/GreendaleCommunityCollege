@@ -79,4 +79,17 @@ characters={
 			}
         }
     }
+    GRD_save_greendale_committee={
+        name=GRD_save_greendale_committee
+        portraits = {
+            civilian = {
+                large = GFX_portrait_committee
+            }
+        }
+        country_leader={
+            ideology = centrism
+            expire="1965.1.1.1"
+            id = -1
+        }
+    }
 }

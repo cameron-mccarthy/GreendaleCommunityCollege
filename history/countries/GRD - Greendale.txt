@@ -16,6 +16,7 @@ set_technology = {
 recruit_character = GRD_dean_pelton
 recruit_character = GRD_britta_perry
 recruit_character = GRD_ben_chang
+recruit_character = GRD_save_greendale_committee
 
 add_ideas = grd_federal_reseach
 

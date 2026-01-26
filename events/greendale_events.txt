@@ -82,7 +82,7 @@ country_event = {
     is_triggered_only = yes
 
     option = {
-        name = mod_event.4.a
+        name = mod_event.4.b
         set_politics = {
             ruling_party = neutrality
         }
@@ -95,7 +95,7 @@ country_event = {
     }
     
     option = {
-        name = mod_event.4.b
+        name = mod_event.4.a
         set_politics = {
             ruling_party = democratic
         }
