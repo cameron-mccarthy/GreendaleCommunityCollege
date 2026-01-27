@@ -67,4 +67,8 @@ spriteTypes = {
         name = "GFX_portrait_committee"
         texturefile = "gfx/leaders/GRD/savegreendalecommittee.tga"
     }
+    spriteType = {
+        name = "GFX_portrait_jeff_winger"
+        texturefile = "gfx/leaders/GRD/jeffwinger.tga"
+    }
 }

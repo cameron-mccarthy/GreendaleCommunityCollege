@@ -92,4 +92,34 @@ characters={
             id = -1
         }
     }
+    GRD_jeff_winger={
+        name = GRD_jeff_winger
+        portraits = {
+            army = {
+                large = GFX_portrait_jeff_winger
+            }
+            army = {
+                small = GFX_portrait_big_cheddar_small
+            }
+        }
+        advisor = {
+            slot = army_chief
+            traits = {
+                army_chief_offensive_2
+            }
+            cost = 100
+            ai_will_do = {
+                factor = 1.0
+            }
+        }
+        corps_commander={
+			traits={ infantry_officer commando }
+			skill=6
+			attack_skill=7
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=6
+			legacy_id=0
+		}
+    }
 }
