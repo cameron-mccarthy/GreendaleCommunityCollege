@@ -1,3 +1,10 @@
+grd_basic_greendale_decisions_cat = {
+    icon = general_political_actions
+    allowed = {
+        tag = grd
+    }
+}
+
 grd_secure_chang_decisions_cat = {
     icon = general_political_actions
     allowed = {

@@ -59,6 +59,7 @@ spriteTypes = {
         name = "GFX_portrait_ben_chang"
         texturefile = "gfx/leaders/GRD/senorchang.tga"
     }
+
     spriteType = {
         name = "GFX_portrait_ben_chang_small"
         texturefile = "gfx/leaders/GRD/senorchangsmall.tga"

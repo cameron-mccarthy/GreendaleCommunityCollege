@@ -13,3 +13,7 @@
  mod_event.4.d: "Former Spanish teacher Ben Chang's attempt to secure control over the school was incredibly unpopular with the student body. The students, mainly the so-called 'Greendale Seven' lead a revolution to oust Chang, and resore peace to campus. However, upon his defeat, internal devision began on what should happen next. Some argue to restore Dean Craig Pelton to head of the school. Other say that the Dean failed Greendale by allowing this to occur and therefore cannot be trusted. Instead, the propose to let a committee to Save Greendale form, to decide what happens next."
  mod_event.4.a: "Restore the dean"
  mod_event.4.b: "Save Greendale Committee"
+ mod_event.5.t: "Chang's Outfit"
+ mod_event.5.d: "Which version of Chang should lead our glorious school?"
+ mod_event.5.a: "Señor Chang"
+ mod_event.5.b: "Emperor Chang"

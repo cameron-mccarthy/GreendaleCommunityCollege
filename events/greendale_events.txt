@@ -105,3 +105,37 @@ country_event = {
         add_stability = .1
     }
 }
+
+#chang's outfits
+country_event = {
+    id = mod_event.5
+    title = mod_event.5.t
+    desc = mod_event.5.d
+
+    trigger = {
+        tag = grd
+    }
+
+    fire_only_once = no
+    is_triggered_only = yes
+
+    option = {
+        name = mod_event.5.a
+        if = {
+            limit = {has_country_leader = {name = "Señor Chang" ruling_only = yes}}
+            set_country_leader_portrait = {
+                portrait = "gfx/leaders/GRD/senorchang.tga"
+            }
+        }
+    }
+    
+    option = {
+        name = mod_event.5.b
+        if = {
+            limit = {has_country_leader = {name = "Señor Chang" ruling_only = yes}}
+            set_country_leader_portrait = {
+                portrait = "gfx/leaders/GRD/emperorchang.tga"
+            }
+        }
+    }
+}
