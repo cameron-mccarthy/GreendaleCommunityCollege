@@ -34,5 +34,17 @@ ideas = {
                 experience_gain_army_factor = -0.10
             }
         }
+        grd_rebuilding_administration = {
+            picture = generic_pp_unity_bonus
+
+            modifier = {
+                consumer_goods_factor = 0.2
+                political_power_gain = -0.1
+                research_speed_factor = -0.1
+                political_advisor_cost_factor = 0.5
+                stability_factor = -0.4
+                army_org_factor = -0.1
+            }
+        }
     }
 }

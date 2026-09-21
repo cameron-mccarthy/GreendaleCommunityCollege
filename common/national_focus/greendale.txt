@@ -11,7 +11,7 @@ focus_tree = {
     focus = {
         id = GRD_focus_enrollment
         icon = GFX_focus_generic_manpower
-        x = 10
+        x = 12
         y = 0
         cost = 5
         completion_reward = {
@@ -127,7 +127,7 @@ focus_tree = {
         id = GRD_focus_chang
         icon = GFX_focus_chang
         relative_position_id = GRD_focus_security_force
-        x = -2
+        x = -3
         y = 1
         cost = 5
 
@@ -245,7 +245,7 @@ focus_tree = {
 
     focus = {
         id = GRD_focus_chang_military_2
-        icon = GFX_focus_research
+        icon = GFX_focus
         relative_position_id = GRD_focus_chang_military
         x = 0
         y = 1
@@ -265,7 +265,7 @@ focus_tree = {
 
     focus = {
         id = GRD_focus_chang_dynasty
-        icon = GFX_focus_research
+        icon = GFX_focus
         relative_position_id = GRD_focus_buffs
         x = 0
         y = 1
@@ -293,19 +293,81 @@ focus_tree = {
         id = GRD_focus_save_greendale
         icon = GFX_focus_
         relative_position_id = GRD_focus_security_force
-        x = 2
+        x = 3
         y = 1
         cost = 5
 
         available = {
-            has_government = neutrality
+            has_completed_focus = GRD_focus_chang
+            NOT = { has_government = fascism}
         }
 
         completion_reward = {
-			add_manpower = 10
+			add_ideas = grd_rebuilding_administration
+            add_political_power = 20
 		}
         prerequisite = {
             focus =  GRD_focus_security_force
+        }
+    }
+
+    focus = {
+        id = GRD_focus_forgive_school_board
+        icon = GFX_focus
+        relative_position_id = GRD_focus_save_greendale
+        x = 0
+        y = 1
+        cost = 5
+
+        available = {
+            NOT = { has_government = fascism}
+        }
+
+        completion_reward = {
+		}
+        prerequisite = {
+            focus =  GRD_focus_save_greendale
+        }
+    }
+
+    focus = {
+        id = GRD_focus_next_dean
+        icon = GFX_focus
+        relative_position_id = GRD_focus_forgive_school_board
+        x = -1
+        y = 1
+        cost = 5
+
+        available = {
+             has_government = neutrality
+        }
+
+        completion_reward = {
+		}
+        prerequisite = {
+            focus =  GRD_focus_forgive_school_board
+        }
+    }
+
+    focus = {
+        id = GRD_focus_criag_pelton
+        icon = GFX_focus
+        relative_position_id = GRD_focus_forgive_school_board
+        x = 1
+        y = 1
+        cost = 5
+
+        available = {
+             has_government = democratic
+        }
+        mutually_exclusive = {
+            focus = GRD_focus_next_dean
+        }
+
+        completion_reward = {
+		}
+        prerequisite = {
+            focus =  GRD_focus_forgive_school_board
         }
     }
 

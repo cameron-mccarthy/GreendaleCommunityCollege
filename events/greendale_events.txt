@@ -91,6 +91,8 @@ country_event = {
         }
         add_stability = -.10
         add_political_power = 20
+        remove_ideas = grd_unpopular_rule
+        remove_ideas = grd_changlourious_basterds
     }
     
     option = {
@@ -103,6 +105,8 @@ country_event = {
             popularity = .3
         }
         add_stability = .1
+        remove_ideas = grd_changlourious_basterds
+        remove_ideas = grd_changlourious_basterds
     }
 }
 
