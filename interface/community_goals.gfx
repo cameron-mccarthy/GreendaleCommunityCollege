@@ -1,0 +1,6 @@
+spriteTypes = {	
+	SpriteType = { 
+			name = "GFX_focus_chang"
+			texturefile = "gfx/interface/goals/focus_GRD_chang.dds"
+		}
+}
