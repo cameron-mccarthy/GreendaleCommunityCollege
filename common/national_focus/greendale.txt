@@ -149,7 +149,7 @@ focus_tree = {
         id = GRD_focus_curriculum_unavailable
         icon = GFX_focus
         relative_position_id = GRD_focus_chang
-        x = -2
+        x = 0
         y = 1
         cost = 2
 
@@ -190,9 +190,9 @@ focus_tree = {
     focus = {
         id = GRD_focus_seize_colorado
         icon = GFX_focus
-        relative_position_id = GRD_focus_chang
+        relative_position_id = GRD_focus_security_force
         x = 0
-        y = 1
+        y = 2
         cost = 7
 
         completion_reward = {
@@ -204,11 +204,12 @@ focus_tree = {
 		}
         prerequisite = {
             focus = GRD_focus_chang
+            focus = GRD_focus_save_greendale
         }
     }
 
     focus = {
-        id = GRD_focus_buffs
+        id = GRD_focus_seize_new_mexico
         icon = GFX_focus
         relative_position_id = GRD_focus_seize_colorado
         x = 0
@@ -226,8 +227,8 @@ focus_tree = {
     focus = {
         id = GRD_focus_chang_military
         icon = GFX_focus_generic_military_mission
-        relative_position_id = GRD_focus_chang
-        x = 2
+        relative_position_id = GRD_focus_chang_dynasty
+        x = 1
         y = 1
         cost = 5
 
@@ -239,7 +240,7 @@ focus_tree = {
 			add_manpower = 10
 		}
         prerequisite = {
-            focus =  GRD_focus_chang
+            focus =  GRD_focus_chang_dynasty
         }
     }
 
@@ -266,7 +267,7 @@ focus_tree = {
     focus = {
         id = GRD_focus_chang_dynasty
         icon = GFX_focus
-        relative_position_id = GRD_focus_buffs
+        relative_position_id = GRD_focus_school_board
         x = 0
         y = 1
         cost = 5
@@ -278,12 +279,7 @@ focus_tree = {
         completion_reward = {
 			add_manpower = 10
 		}
-        prerequisite = {
-            focus =  GRD_focus_buffs
-        }
-        prerequisite = {
-            focus =  GRD_focus_chang_military_2
-        }
+        
         prerequisite = {
             focus =  GRD_focus_school_board
         }
@@ -350,7 +346,7 @@ focus_tree = {
     }
 
     focus = {
-        id = GRD_focus_criag_pelton
+        id = GRD_focus_craig_pelton
         icon = GFX_focus
         relative_position_id = GRD_focus_forgive_school_board
         x = 1
@@ -372,10 +368,10 @@ focus_tree = {
     }
 
     focus = {
-        id = GRD_focus_industry
+        id = GRD_focus_chaos_theory
         icon = GFX_goal_generic_construct_civ_factory
         relative_position_id = GRD_focus_enrollment
-        x = 6
+        x = 8
         y = 0
         cost = 5
         completion_reward = {
@@ -413,10 +409,10 @@ focus_tree = {
     }
 
     focus = {
-        id = GRD_focus_industry2
+        id = GRD_focus_pottery
         icon = GFX_goal_generic_construct_civ_factory
-        relative_position_id = GRD_focus_industry
-        x = 0
+        relative_position_id = GRD_focus_chaos_theory
+        x = 1
         y = 1
         cost = 5
         completion_reward = {
@@ -459,7 +455,159 @@ focus_tree = {
 		}
 
         prerequisite = {
-            focus = GRD_focus_industry
+            focus = GRD_focus_chaos_theory
+        }
+    }
+
+    focus = {
+        id = GRD_focus_physical_education
+        icon = GFX_goal_generic_construct_civ_factory
+        relative_position_id = GRD_focus_chaos_theory
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = industry
+            }
+
+		}
+
+        prerequisite = {
+            focus = GRD_focus_chaos_theory
+        }
+    }
+
+    focus = {
+        id = GRD_focus_anthropology 
+        icon = GFX_goal_generic_construct_civ_factory
+        relative_position_id = GRD_focus_physical_education
+        x = -1
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = industry
+            }
+
+		}
+
+        prerequisite = {
+            focus = GRD_focus_physical_education
+        }
+    }
+
+    focus = {
+        id = GRD_focus_trampoline
+        icon = GFX_goal_generic_construct_civ_factory
+        relative_position_id = GRD_focus_physical_education
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = industry
+            }
+		}
+
+        prerequisite = {
+            focus = GRD_focus_physical_education
+        }
+        prerequisite = {
+            focus = GRD_focus_pottery
+        }
+    }
+    
+    focus = {
+        id = GRD_focus_statistic
+        icon = GFX_goal_generic_construct_civ_factory
+        relative_position_id = GRD_focus_pottery
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = industry
+            }
+		}
+
+        prerequisite = {
+            focus = GRD_focus_pottery
+        }
+    }
+
+    focus = {
+        id = GRD_focus_biology
+        icon = GFX_goal_generic_construct_civ_factory
+        relative_position_id = GRD_focus_anthropology
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = industry
+            }
+		}
+
+        prerequisite = {
+            focus = GRD_focus_anthropology
+        }
+        prerequisite = {
+            focus = GRD_focus_trampoline
+        }
+    }
+    focus = {
+        id = GRD_focus_interior_design
+        icon = GFX_goal_generic_construct_civ_factory
+        relative_position_id = GRD_focus_trampoline
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = industry
+            }
+		}
+
+        prerequisite = {
+            focus = GRD_focus_statistic
+        }
+        prerequisite = {
+            focus = GRD_focus_trampoline
+        }
+    }
+    focus = {
+        id = GRD_focus_ladders
+        icon = GFX_goal_generic_construct_civ_factory
+        relative_position_id = GRD_focus_biology
+        x = 1
+        y = 1
+        cost = 5
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = industry
+            }
+		}
+
+        prerequisite = {
+            focus = GRD_focus_biology
+        }
+        prerequisite = {
+            focus = GRD_focus_interior_design
         }
     }
 }
