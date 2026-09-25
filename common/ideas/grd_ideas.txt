@@ -46,5 +46,12 @@ ideas = {
                 army_org_factor = -0.1
             }
         }
+        grd_idea_curriculum_improvements = {
+            picture = generic_pp_unity_bonus
+            modifier = {
+                production_speed_buildings_factor = 0.1
+            }
+        }
+
     }
 }

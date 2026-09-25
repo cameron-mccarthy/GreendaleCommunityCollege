@@ -39,7 +39,7 @@ focus_tree = {
 
     focus = {
         id = GRD_focus_spanish
-        icon = GFX_focus
+        icon = GFX_focus_PHI_reconciliation_with_spain
         relative_position_id = GRD_focus_enrollment
         x = -1
         y = 1
@@ -340,6 +340,10 @@ focus_tree = {
 
         completion_reward = {
 		}
+
+        mutually_exclusive = {
+            focus = GRD_focus_craig_pelton
+        }
         prerequisite = {
             focus =  GRD_focus_forgive_school_board
         }
@@ -467,12 +471,38 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            add_tech_bonus = {
-                bonus = 1
-                uses = 1
-                category = industry
-            }
-
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+            add_ideas = grd_idea_curriculum_improvements
+            
 		}
 
         prerequisite = {
@@ -493,17 +523,19 @@ focus_tree = {
                 uses = 1
                 category = industry
             }
-
 		}
 
         prerequisite = {
             focus = GRD_focus_physical_education
         }
+        prerequisite = {
+            focus = GRD_focus_pottery
+        }
     }
 
     focus = {
         id = GRD_focus_trampoline
-        icon = GFX_goal_generic_construct_civ_factory
+        icon = GFX_focus_generic_rubber
         relative_position_id = GRD_focus_physical_education
         x = 1
         y = 1
@@ -512,10 +544,41 @@ focus_tree = {
             add_tech_bonus = {
                 bonus = 1
                 uses = 1
-                category = industry
+                category = synth_resources
             }
-		}
+		
 
+        random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+        }
         prerequisite = {
             focus = GRD_focus_physical_education
         }
@@ -541,6 +604,9 @@ focus_tree = {
 
         prerequisite = {
             focus = GRD_focus_pottery
+        }
+        prerequisite = {
+            focus = GRD_focus_physical_education
         }
     }
 
