@@ -217,7 +217,11 @@ focus_tree = {
         cost = 5
 
         completion_reward = {
-			
+			add_state_core = 376
+            transfer_state = 376
+            USA = {
+                remove_state_core = 376
+            } 
 		}
         prerequisite = {
             focus = GRD_focus_seize_colorado
@@ -595,10 +599,9 @@ focus_tree = {
         y = 1
         cost = 5
         completion_reward = {
-            add_tech_bonus = {
-                bonus = 1
-                uses = 1
-                category = industry
+            swap_ideas = {
+                remove_idea = grd_idea_curriculum_improvements
+                add_idea = grd_idea_curriculum_improvements_2
             }
 		}
 

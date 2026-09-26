@@ -53,5 +53,12 @@ ideas = {
             }
         }
 
+        grd_idea_curriculum_improvements_2 = {
+            picture = generic_pp_unity_bonus
+            modifier = {
+                production_speed_buildings_factor = 0.1
+                consumer_goods_factor = -0.1
+            }
+        }
     }
 }
