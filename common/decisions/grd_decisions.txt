@@ -1,8 +1,5 @@
 grd_basic_greendale_decisions_cat = {
     grd_decision_chang_outfit = {
-        available = {
-            has_government = fascism
-        }
         icon = generic_industry
         complete_effect = {
             country_event = {id = mod_event.5}

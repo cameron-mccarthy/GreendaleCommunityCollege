@@ -62,6 +62,20 @@ ideas = {
             }
         }
 
+        grd_changlourious_basterds_4 = {
+            picture = generic_pp_unity_bonus
+
+            modifier = {
+                army_attack_factor = .05
+                army_defence_factor = .05
+                army_speed_factor = 0.2
+                army_org_factor = -0.1
+                army_morale_factor = -0.1
+                planning_speed = 0.20
+                max_planning = 0.10
+            }
+        }
+
         grd_rebuilding_administration = {
             picture = generic_pp_unity_bonus
 
