@@ -127,7 +127,7 @@ focus_tree = {
         id = GRD_focus_chang
         icon = GFX_focus_chang
         relative_position_id = GRD_focus_security_force
-        x = -3
+        x = -4
         y = 1
         cost = 5
 
@@ -188,11 +188,28 @@ focus_tree = {
     }
 
     focus = {
-        id = GRD_focus_seize_colorado
+        id = GRD_focus_poli_sci
         icon = GFX_focus
         relative_position_id = GRD_focus_security_force
         x = 0
         y = 2
+        cost = 7
+
+        completion_reward = {
+			add_political_power = 150
+		}
+        prerequisite = {
+            focus = GRD_focus_chang
+            focus = GRD_focus_save_greendale
+        }
+    }
+
+    focus = {
+        id = GRD_focus_seize_colorado
+        icon = GFX_focus
+        relative_position_id = GRD_focus_poli_sci
+        x = 0
+        y = 1
         cost = 7
 
         completion_reward = {
@@ -203,8 +220,7 @@ focus_tree = {
             } 
 		}
         prerequisite = {
-            focus = GRD_focus_chang
-            focus = GRD_focus_save_greendale
+            focus = GRD_focus_poli_sci
         }
     }
 
@@ -229,10 +245,26 @@ focus_tree = {
     }
 
     focus = {
+        id = GRD_focus_seize_city_college
+        icon = GFX_focus
+        relative_position_id = GRD_focus_seize_new_mexico
+        x = 0
+        y = 1
+        cost = 5
+
+        completion_reward = {
+			add_state_core = 984
+		}
+        prerequisite = {
+            focus = GRD_focus_seize_new_mexico
+        }
+    }
+
+    focus = {
         id = GRD_focus_chang_military
         icon = GFX_focus_generic_military_mission
         relative_position_id = GRD_focus_chang_dynasty
-        x = 1
+        x = 2
         y = 1
         cost = 5
 
@@ -241,7 +273,10 @@ focus_tree = {
         }
 
         completion_reward = {
-			add_manpower = 10
+			swap_ideas = {
+                add_idea = grd_changlourious_basterds_2
+                remove_idea = grd_changlourious_basterds
+            }
 		}
         prerequisite = {
             focus =  GRD_focus_chang_dynasty
@@ -252,7 +287,7 @@ focus_tree = {
         id = GRD_focus_chang_military_2
         icon = GFX_focus
         relative_position_id = GRD_focus_chang_military
-        x = 0
+        x = -1
         y = 1
         cost = 5
 
@@ -261,10 +296,44 @@ focus_tree = {
         }
 
         completion_reward = {
-			add_manpower = 10
+			swap_ideas = {
+                add_idea = grd_changlourious_basterds_3
+                remove_idea = grd_changlourious_basterds_2
+            }
 		}
         prerequisite = {
             focus =  GRD_focus_chang_military
+        }
+    }
+
+    focus = {
+        id = GRD_focus_integrate_city_college
+        icon = GFX_focus
+        relative_position_id = GRD_focus_chang_military
+        x = 1
+        y = 1
+        cost = 5
+
+        available = {
+            has_government = fascism 
+            984 = { is_owned_by = GRD }
+        }
+
+        completion_reward = {
+            984 = {
+			add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+            }
+		}
+        prerequisite = {
+            focus =  GRD_focus_chang_military
+        }
+        prerequisite = {
+            focus =  GRD_focus_seize_city_college
         }
     }
 
@@ -293,7 +362,7 @@ focus_tree = {
         id = GRD_focus_save_greendale
         icon = GFX_focus_
         relative_position_id = GRD_focus_security_force
-        x = 3
+        x = 4
         y = 1
         cost = 5
 
@@ -478,7 +547,7 @@ focus_tree = {
             random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
-						building = industrial_complex
+						building = infrastructure
 						size > 0
 						include_locked = yes
 					}
@@ -488,7 +557,7 @@ focus_tree = {
 							owner = {
 								any_owned_state = {
 									free_building_slots = {
-										building = industrial_complex
+										building = infrastructure
 										size > 0
 										include_locked = yes
 									}
